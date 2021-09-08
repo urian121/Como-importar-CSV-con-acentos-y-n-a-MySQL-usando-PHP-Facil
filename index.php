@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<!--Importar correctamente las eñes y tildes en MySQL con csv y php -->
 <div class="cargando">
     <div class="loader-outter"></div>
     <div class="loader-inner"></div>

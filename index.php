@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link type="text/css" rel="shortcut icon" href="img/logo-mywebsite-urian-viera.svg"/>
-  <title>    Cómo importar CSV con acentos y ñ a MySQL usando PHP Fácil :: WebDeveloper Urian Viera</title>
+  <title>Cómo importar CSV con acentos y ñ a MySQL usando PHP Fácil :: WebDeveloper Urian Viera</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/cargando.css">
@@ -34,11 +34,10 @@
 
 
 <div class="container mb-5">
-
-<h3 class="text-center">
-    Cómo importar <span style="color: #777;">CSV</span> con acentos y ñ a MySQL usando PHP Fácil
-</h3>
-<hr>
+  <h3 class="text-center">
+      Cómo importar <span style="color: #777;">CSV</span> con acentos y ñ a MySQL usando PHP Fácil
+  </h3>
+  <hr>
 
 
  <div class="row">
@@ -61,13 +60,13 @@
     <?php
     header("Content-Type: text/html;charset=utf-8");
     include('config.php');
-    $sqlProductos         = ("SELECT * FROM personas ORDER BY id ASC");
-    $queryDataProductos   = mysqli_query($con, $sqlProductos);
-    $totalProducts        = mysqli_num_rows($queryDataProductos);
+    $sqlNombrePersonas         = ("SELECT * FROM personas ORDER BY id ASC");
+    $queryDataNombrePersonas   = mysqli_query($con, $sqlNombrePersonas);
+    $totalNombrePersonas       = mysqli_num_rows($queryDataNombrePersonas);
     ?>
 
       <h6 class="text-center">
-        Stock de Productos  <strong>(<?php echo $totalProducts; ?>)</strong>
+        Nombre de Personas  <strong>(<?php echo $totalProducts; ?>)</strong>
       </h6>
 
         <table class="table table-bordered table-striped">
@@ -81,11 +80,11 @@
           <tbody>
             <?php 
             $i = 1;
-            while ($dataProduct = mysqli_fetch_array($queryDataProductos)) { ?>
+            while ($dataPersona = mysqli_fetch_array($queryDataNombrePersonas)) { ?>
             <tr>
               <th><?php echo $i++; ?></th>
-              <td><?php echo $dataProduct['nombre']; ?></td>
-              <td><?php echo $dataProduct['sexo']; ?></td>
+              <td><?php echo $dataPersona['nombre']; ?></td>
+              <td><?php echo $dataPersona['sexo']; ?></td>
             </tr>
           <?php } ?>
           </tbody>

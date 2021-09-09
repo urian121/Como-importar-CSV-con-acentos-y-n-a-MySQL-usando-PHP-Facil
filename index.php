@@ -24,7 +24,7 @@
     <ul class="navbar-nav mr-auto collapse navbar-collapse">
       <li class="nav-item active">
         <a href="https://blogangular-c7858.web.app/"> 
-        <strong>Canal WebDeveloper </strong>
+        <strong style="color:#fff;">Canal WebDeveloper </strong>
         </a>
       </li>
     </ul>

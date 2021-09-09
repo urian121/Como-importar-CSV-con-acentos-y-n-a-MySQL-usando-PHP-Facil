@@ -67,7 +67,7 @@
     ?>
 
       <h6 class="text-center">
-        Nombre de Personas  <strong>(<?php echo $totalProducts; ?>)</strong>
+        Nombre de Personas  <strong>(<?php echo $totalNombrePersonas; ?>)</strong>
       </h6>
 
         <table class="table table-bordered table-striped">
